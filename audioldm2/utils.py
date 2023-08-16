@@ -145,7 +145,7 @@ def default_audioldm_config(model_name="audioldm2-full"):
                 "conditioning_key": "film",
                 "target": "audioldm2.latent_diffusion.modules.encoders.modules.CLAPAudioEmbeddingClassifierFreev2",
                 "params": {
-                  "pretrained_path": "/mnt/bn/lqhaoheliu/exps/checkpoints/audioldm/2023_04_07_audioldm_clap_v2_yusong/music_speech_audioset_epoch_15_esc_89.98.pt",
+                  "pretrained_path": "music_speech_audioset_epoch_15_esc_89.98.pt",
                   "sampling_rate": 48000,
                   "embed_mode": "text",
                   "amodel": "HTSAT-base"

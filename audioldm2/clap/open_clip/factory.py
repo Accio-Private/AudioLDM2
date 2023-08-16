@@ -144,6 +144,7 @@ def create_model(
                 checkpoint_path = download_pretrained(url, root=openai_model_cache_dir)
             elif os.path.exists(pretrained_orig):
                 checkpoint_path = pretrained_orig
+            print("pretrained",pretrained,"Harsh 3 ", url, "checkpoint_path ",checkpoint_path,"openai_model_cache_dir",openai_model_cache_dir,"amodel_name",amodel_name)
             if checkpoint_path:
                 logging.info(
                     f"Loading pretrained {amodel_name}-{tmodel_name} weights ({pretrained})."

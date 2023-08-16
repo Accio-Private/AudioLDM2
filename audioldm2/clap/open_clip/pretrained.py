@@ -61,7 +61,12 @@ _VITL14 = dict(
     openai="https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt",
 )
 
+_HTSAT_base = dict(
+    hf="https://huggingface.co/lukewys/laion_clap/raw/main/music_speech_audioset_epoch_15_esc_89.98.pt"
+)
+
 _PRETRAINED = {
+    "HTSAT-base": _HTSAT_base,
     "RN50": _RN50,
     "RN50-quickgelu": _RN50_quickgelu,
     "RN101": _RN101,
@@ -104,9 +109,11 @@ def list_pretrained_model_tags(model: str):
 
 
 def get_pretrained_url(model: str, tag: str):
+    print("_PRETRAINED matrix",_PRETRAINED, "model",model, "tag",tag)
     if model not in _PRETRAINED:
         return ""
     model_pretrained = _PRETRAINED[model]
+    print("Rajat model_pretrained",model_pretrained,"tag",tag)
     if tag not in model_pretrained:
         return ""
     return model_pretrained[tag]
