@@ -1,18 +1,28 @@
 # AudioLDM 2
 
+### Required flags on MacOS:
+PHONEMIZER_ESPEAK_LIBRARY="/opt/homebrew/Cellar/espeak/1.48.04_1/lib/libespeak.1.1.48.dylib"
+PYTORCH_ENABLE_MPS_FALLBACK=1
+
+
+
+
+
 [![arXiv](https://img.shields.io/badge/arXiv-2308.05734-brightgreen.svg?style=flat-square)](https://arxiv.org/abs/2308.05734)  [![githubio](https://img.shields.io/badge/GitHub.io-Audio_Samples-blue?logo=Github&style=flat-square)](https://audioldm.github.io/audioldm2/)  [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/haoheliu/audioldm2-text2audio-text2music)  
 
 This repo currently support Text-to-Audio (including Music) and Text-to-Speech Generation. 
 
-* [TODO](#todo)
-* [Web APP](#web-app)
-* [Commandline Usage](#commandline-usage)
-  + [Installation](#installation)
-  + [Run the model in commandline](#run-the-model-in-commandline)
-* [Random Seed Matters](#random-seed-matters)
-* [Pretrained Models](#pretrained-models)
-* [Other options](#other-options)
-* [Cite this work](#cite-this-work)
+- [AudioLDM 2](#audioldm-2)
+    - [Required flags on MacOS:](#required-flags-on-macos)
+  - [TODO](#todo)
+  - [Web APP](#web-app)
+  - [Commandline Usage](#commandline-usage)
+    - [Installation](#installation)
+    - [Run the model in commandline](#run-the-model-in-commandline)
+  - [Random Seed Matters](#random-seed-matters)
+  - [Pretrained Models](#pretrained-models)
+  - [Other options](#other-options)
+  - [Cite this work](#cite-this-work)
 
 <hr>
 
